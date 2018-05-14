@@ -49,6 +49,6 @@ public class ContextMenuOptions extends SetGroupMailByMessagePreference {
 		app.zPageCalendar.zRightClickAddressBubble();
 
 		logger.info(app.zPageMail.zVerifyAllAddressContextMenu("calendar"));
-		ZAssert.assertTrue(app.zPageMail.zVerifyAllAddressContextMenu("calendar"),	"Delete, Copy, Edit, Expand and Add to Contacts menus doesn't exists");
+		ZAssert.assertTrue(app.zPageMail.zVerifyAllAddressContextMenu("calendar"),	"Delete, Edit, Expand and Add to Contacts menus doesn't exists");
 	}
 }

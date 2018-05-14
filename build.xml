@@ -1,6 +1,6 @@
 <project xmlns:ivy="antlib:org.apache.ivy.ant" name="zm-selenium" default="selenium-jar" basedir=".">
 
-	<property name="selenium.version" value="3.7.1"/>
+	<property name="selenium.version" value="3.11.0"/>
 
 	<property name="ivy.jar.dir" location="${user.home}/.ant/lib"/>
 	<property name="ivy.install.version" value="2.3.0"/>
@@ -215,6 +215,8 @@
 		<ivy:install organisation="com.google.code.gson" module="gson" revision="2.8.0" settingsRef="ivy.settings" from="chain-resolver" to="build-tmp" overwrite="true" transitive="true" type="jar"/>
 		<ivy:install organisation="com.google.guava" module="guava" revision="23.0" settingsRef="ivy.settings" from="chain-resolver" to="build-tmp" overwrite="true" transitive="true" type="jar"/>
 		<ivy:install organisation="com.jcraft" module="jsch" revision="0.1.53" settingsRef="ivy.settings" from="chain-resolver" to="build-tmp" overwrite="true" transitive="true" type="jar"/>
+		<ivy:install organisation="com.squareup.okhttp3" module="okhttp" revision="3.10.0" settingsRef="ivy.settings" from="chain-resolver" to="build-tmp" overwrite="true" transitive="true" type="jar"/>
+		<ivy:install organisation="com.squareup.okio" module="okio" revision="1.13.0" settingsRef="ivy.settings" from="chain-resolver" to="build-tmp" overwrite="true" transitive="true" type="jar"/>
 		<ivy:install organisation="commons-beanutils" module="commons-beanutils" revision="1.7.0" settingsRef="ivy.settings" from="chain-resolver" to="build-tmp" overwrite="true" transitive="true" type="jar"/>
 		<ivy:install organisation="commons-cli" module="commons-cli" revision="1.2" settingsRef="ivy.settings" from="chain-resolver" to="build-tmp" overwrite="true" transitive="true" type="jar"/>
 		<ivy:install organisation="commons-codec" module="commons-codec" revision="1.7" settingsRef="ivy.settings" from="chain-resolver" to="build-tmp" overwrite="true" transitive="true" type="jar"/>
