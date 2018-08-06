@@ -155,6 +155,6 @@ public class AddToContacts extends SetGroupMailByMessagePreference {
 				"//mail:cn[@id='" + contactId + "']//mail:a[@n='email']", null);
 
 		ZAssert.assertEquals(firstname, contactFirst, "Verify the first name was saved correctly");
-		ZAssert.assertStringContains(OriginalEmailAddr, email, "Verify the email was saved correctly");
+		ZAssert.assertStringContains(email, OriginalEmailAddr, "Verify the email was saved correctly");
 	}
 }

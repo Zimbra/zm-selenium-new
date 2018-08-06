@@ -26,7 +26,7 @@ public class DialogConfirmationDeclineAppointment extends DialogWarning {
 		public static final String SingleQuoteUnicode = "\u2019";
 		public static final String LocatorDivID = "CONFIRM_DELETE_APPT_DIALOG";
 		public static final String LocatorDivCSS = "css=div#CONFIRM_DELETE_APPT_DIALOG";
-		public static final String DontNotifyOrganizerRadioButton = "css=div[id='CONFIRM_DELETE_APPT_DIALOG_content'] td label:contains('Don"+SingleQuoteUnicode+"t notify organizer')";
+		public static final String DontNotifyOrganizerRadioButton = "css=div[id='CONFIRM_DELETE_APPT_DIALOG_content'] td label:contains('Don't notify organizer')";
 		public static final String NotifyOrganizerRadioButton = "css=div[id='CONFIRM_DELETE_APPT_DIALOG_content'] td label:contains('Notify organizer')";
 	}
 

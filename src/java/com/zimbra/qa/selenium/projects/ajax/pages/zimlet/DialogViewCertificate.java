@@ -94,7 +94,7 @@ public class DialogViewCertificate extends AbsDialog {
 	public String zGetDisplayedTextIssuedToOrganization() throws HarnessException {
 		logger.info(myPageName() + " Issued to Organisation");
 
-		String locator = "//table[@class='CertificateDetails']/tbody/tr[@data-name='Organization (O)'][1]/td[@class='Value']";
+		String locator = "//table[@class='CertificateDetails']/tbody/tr[@data-name='Organization(O)'][1]/td[@class='Value']";
 
 		if (!this.sIsElementPresent(locator)) {
 			throw new HarnessException("Issued to organization " + locator + " is not present");
@@ -106,7 +106,7 @@ public class DialogViewCertificate extends AbsDialog {
 	public String zGetDisplayedTextIssuedByOrganization() throws HarnessException {
 		logger.info(myPageName() + " Issued by Organisation");
 
-		String locator = "//table[@class='CertificateDetails']/tbody/tr[@data-name='Organization (O)'][2]/td[@class='Value']";
+		String locator = "//table[@class='CertificateDetails']/tbody/tr[@data-name='Organization(O)'][2]/td[@class='Value']";
 
 		if (!this.sIsElementPresent(locator)) {
 			throw new HarnessException("Issued by organization " + locator + " is not present");

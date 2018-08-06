@@ -43,17 +43,17 @@ public class DisplayMailContent extends SetGroupMailByMessagePreference {
 				|| ConfigProperties.getStringProperty("browser").contains("edge")) {
 			multilineHtmlData = "<div><span style=\"font-size: 14pt;\"><span style=\"font-family: &quot;comic sans ms&quot;,&quot;comic sans&quot;,sans-serif;\">Number list below</span>:</span></div>";
 		} else {
-			multilineHtmlData = "<div><span style=\"font-size: 14pt;\"><span style=\"font-family: &quot;comic sans ms&quot;, &quot;comic sans&quot;, sans-serif;\">Number list below</span>:</span></div>";
+			multilineHtmlData = "<div style=\"\"><span style=\"font-size: 14pt;\"><span style=\"font-family: &quot;comic sans ms&quot;, &quot;comic sans&quot;, sans-serif;\">Number list below</span>:</span></div>";
 		}
 
 		final String mimeFile = ConfigProperties.getBaseDirectory() + "/data/public/mime/email19/multilineHTMLcontent.txt";
 		final String subject = "subject13214016725788";
-		final String boldContent = "<div><strong>BoldString</strong></div>";
-		final String italicContent = "<div><em>ItalicString</em></div>";
+		final String boldContent = "<div style=\"\"><strong style=\"\">BoldString</strong></div>";
+		final String italicContent = "<div style=\"\"><em style=\"\">ItalicString</em></div>";
 		final String underlineContent ="<span style=\"text-decoration: underline;\">Underline text</span>";
 		final String colorFontContent ="<span style=\"color: rgb(255, 0, 0);\">Red color text</span></div>";
 		final String colorBackgroundContent ="<span style=\"background-color: rgb(51, 153, 102);\">Green background</span></div>";
-		final String numberedListContent ="<ol><li>point one</li><li>point two</li><li>point three</li></ol>";
+		final String numberedListContent ="<ol style=\"\"><li style=\"\">point one</li><li style=\"\">point two</li><li style=\"\">point three</li></ol>";
 
 		// Inject the sample mime
 		injectMessage(app.zGetActiveAccount(), mimeFile);
@@ -84,7 +84,7 @@ public class DisplayMailContent extends SetGroupMailByMessagePreference {
 		if (ConfigProperties.getStringProperty("browser").contains("firefox")) {
 			multilineTextData = "BoldString <br>ItalicString <br>Underline text <br>Red color text <br>Green background <br><br>Number list below : <br><br><br>&nbsp;&nbsp; &nbsp;1. point one <br>&nbsp;&nbsp; &nbsp;2. point two <br>&nbsp;&nbsp; &nbsp;3. point three";
 		} else {
-			multilineTextData = "BoldString <br />ItalicString <br />Underline text <br />Red color text <br />Green background <br /><br />Number list below : <br /><br /><br />    1. point one <br />    2. point two <br />    3. point three";
+			multilineTextData = "BoldString <br style=\"\" />ItalicString <br style=\"\" />Underline text <br style=\"\" />Red color text <br style=\"\" />Green background <br style=\"\" /><br style=\"\" />Number list below : <br style=\"\" /><br style=\"\" /><br style=\"\" />    1. point one <br style=\"\" />    2. point two <br style=\"\" />    3. point three";
 		}
 
 		// Navigate to preference -> Mail and set display mail pref to Text and verify
@@ -129,7 +129,7 @@ public class DisplayMailContent extends SetGroupMailByMessagePreference {
 		if (ConfigProperties.getStringProperty("browser").contains("firefox")) {
 			multilineTextData = "line 1<br>line 2<br>line 3<br><br>line 4";
 		} else {
-			multilineTextData = "line 1<br />line 2<br />line 3<br /><br />line 4";
+			multilineTextData = "line 1<br style=\"\" />line 2<br style=\"\" />line 3<br style=\"\" /><br style=\"\" />line 4";
 		}
 		app.zGetActiveAccount().soapSend(
 				"<GetPrefsRequest xmlns='urn:zimbraAccount'>"
@@ -184,7 +184,7 @@ public class DisplayMailContent extends SetGroupMailByMessagePreference {
 		if (ConfigProperties.getStringProperty("browser").contains("firefox")) {
 			multilineTextData = "line 1<br>line 2<br>line 3<br><br>line 4";
 		} else {
-			multilineTextData = "line 1<br />line 2<br />line 3<br /><br />line 4";
+			multilineTextData = "line 1<br style=\"\" />line 2<br style=\"\" />line 3<br style=\"\" /><br style=\"\" />line 4";
 		}
 
 		app.zGetActiveAccount().soapSend(

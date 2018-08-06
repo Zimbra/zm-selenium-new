@@ -54,12 +54,12 @@ public class HelpLinks extends AdminCore {
 		SleepUtil.sleepSmall();
 
 		// Verify "Administrators Guide" link is present
-		boolean isAdministratorGuideLinkPresent = app.zPageManageHelp.zVerifyHelpCenterLink("Administrators’ Guide");
+		boolean isAdministratorGuideLinkPresent = app.zPageManageHelp.zVerifyHelpCenterLink("Administrators' Guide");
 		ZAssert.assertTrue(isAdministratorGuideLinkPresent, "Verify Zimbra Administrators' Guide link is present");
 		SleepUtil.sleepSmall();
 
 		// Verify "End Users' Guide" link is present
-		boolean isEndUsersGuideLinkPresent = app.zPageManageHelp.zVerifyHelpCenterLink("End Users’ Guide");
+		boolean isEndUsersGuideLinkPresent = app.zPageManageHelp.zVerifyHelpCenterLink("End Users' Guide");
 		ZAssert.assertTrue(isEndUsersGuideLinkPresent, "Verify End Users' Guide link is present");
 
 		app.zPageMain.zLogout();

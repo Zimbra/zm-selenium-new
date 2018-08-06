@@ -135,7 +135,7 @@ public class Decline extends AjaxCore {
 
 		ZimbraAccount.AccountA().soapSend(
 					"<SearchRequest xmlns='urn:zimbraMail' types='message'>"
-				+		"<query>inid:"+ inboxId +" subject:("+ apptSubject +") content:" + "I won’t attend on " + "</query>"
+				+		"<query>inid:"+ inboxId +" subject:("+ apptSubject +") content:" + "I won't attend on " + "</query>"
 				+	"</SearchRequest>");
 
 		String messageId = ZimbraAccount.AccountA().soapSelectValue("//mail:m", "id");

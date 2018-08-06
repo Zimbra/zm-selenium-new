@@ -125,7 +125,7 @@ public class GetMail extends SetGroupMailByMessagePreference {
 		// Create the message data to be sent
 		String subject = "subject" + ConfigProperties.getUniqueString();
 		String bodyText = "text" + ConfigProperties.getUniqueString();
-		String bodyHTML = "text <strong>bold" + ConfigProperties.getUniqueString() + "</strong> text";
+		String bodyHTML = "text <strong style=\"\">bold" + ConfigProperties.getUniqueString() + "</strong> text";
 		String contentHTML = XmlStringUtil.escapeXml(
 			"<html>" +
 				"<head></head>" +
