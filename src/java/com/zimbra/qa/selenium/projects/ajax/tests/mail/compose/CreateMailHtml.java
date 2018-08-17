@@ -87,9 +87,9 @@ public class CreateMailHtml extends SetGroupMailByMessagePreference {
 		final String dToRecipients = ZimbraAccount.AccountA().EmailAddress;
 		final String dSubject = "subject" + ConfigProperties.getUniqueString();
 		final String dBodyHtmlBold = "<strong>BoldString</strong>";
-		final String dBodyHtmlItalic = "<br></div><div><em>ItalicString</em><span id=\"_mce_caret\"></span>";
-		String dBodyHtmlRedColorText = "<br></div><div><span style=\"color: rgb(255, 0, 0);\">RedColorText</span><span id=\"_mce_caret\"></span>";
-		String dBodyHtmlGreenBackgroundText = "<br></div><div><span style=\"background-color: rgb(0, 128, 0);\">GreenBackgroundText</span><span id=\"_mce_caret\"></span>";
+		final String dBodyHtmlItalic = "<br></div><div><span id=\"_mce_caret\"><em>ItalicString</em><span id=\"_mce_caret\"></span>";
+		String dBodyHtmlRedColorText = "<br></div><div><span id=\"_mce_caret\"><span style=\"color: rgb(255, 0, 0);\">RedColorText</span><span id=\"_mce_caret\"></span>";
+		String dBodyHtmlGreenBackgroundText = "<br></div><div><span id=\"_mce_caret\"><span style=\"background-color: rgb(0, 128, 0);\">GreenBackgroundText</span><span id=\"_mce_caret\"></span>";
 
 		if (ConfigProperties.getStringProperty("browser").equals("edge")) {
 			dBodyHtmlRedColorText = "</span></span><br></div><div><span id=\"_mce_caret\"><span style=\"color: #ff0000;\">RedColorText</span><span id=\"_mce_caret\"></span></span>";

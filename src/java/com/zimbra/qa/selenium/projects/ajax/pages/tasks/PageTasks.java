@@ -245,7 +245,7 @@ public class PageTasks extends AbsTab {
 
 			// double-click on the item
 			this.sDoubleClick(itemLocator);
-			page = new FormTaskNew(this.MyApplication);
+			page = new DisplayTask(this.MyApplication);
 
 		} else if (action == Action.A_MAIL_UNCHECKBOX) {
 

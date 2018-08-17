@@ -381,6 +381,7 @@ public class PageManageDomains extends AbsTab {
 		tracer.trace("Enter cos name and limit " + cos_name + " then " + limit);
 
 		AbsPage page = null;
+		SleepUtil.sleepSmall();
 
 		// Click on accounts limit tab
 		this.sClickAt(Locators.DOMAIN_ACCOUNTS_LIMITS, "");

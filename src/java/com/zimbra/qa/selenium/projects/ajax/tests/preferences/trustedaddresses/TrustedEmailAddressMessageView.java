@@ -35,7 +35,7 @@ public class TrustedEmailAddressMessageView extends AjaxCore {
 		super.startingAccountPreferences = new HashMap<String, String>() {{
 			put("zimbraPrefGroupMailBy", "message");
 			put("zimbraPrefMessageViewHtmlPreferred", "TRUE");
-			put("zimbraPrefMailTrustedSenderList", "admintest@testdomain.com");
+			put("zimbraPrefMailTrustedSenderList", "globaladmin@testdomain.com");
 		}};
 	}
 
@@ -62,7 +62,7 @@ public class TrustedEmailAddressMessageView extends AjaxCore {
 
 		// Verify Email id through soap GetPrefsRequest
 		String PrefMailTrustedAddr = ZimbraAccount.AccountZCS().getPreference("zimbraPrefMailTrustedSenderList");
-		ZAssert.assertTrue(PrefMailTrustedAddr.equals("admintest@testdomain.com"), "Verify Email address is present /Pref/TrustedAddr");
+		ZAssert.assertTrue(PrefMailTrustedAddr.equals("globaladmin@testdomain.com"), "Verify Email address is present /Pref/TrustedAddr");
 
 		// Inject the external image message(s)
 		injectMessage(app.zGetActiveAccount(), mimeFile);

@@ -80,7 +80,7 @@ public class LoginWithCsrfTokenCheckDisabled extends AdminCore {
 
 			CommandLineUtility.runCommandOnZimbraServer(ZimbraAccount.AccountZCS().zGetAccountStoreHost(),
 					"zmmailboxdctl restart");
-
+			SleepUtil.sleep(60000);
 			app.zPageMain.zRefreshMainUI();
 
 			// Open the base URL

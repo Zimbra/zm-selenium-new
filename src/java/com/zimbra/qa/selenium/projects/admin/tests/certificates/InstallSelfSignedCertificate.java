@@ -86,6 +86,7 @@ public class InstallSelfSignedCertificate extends AdminCore {
 			// Restart zimbra services
 			CommandLineUtility.runCommandOnZimbraServer(ZimbraAccount.AccountZCS().zGetAccountStoreHost(),
 					"zmmailboxdctl restart");
+			SleepUtil.sleep(60000);
 			app.zPageMain.zRefreshMainUI();
 
 			ZimbraAdminAccount.AdminConsoleAdmin().provision();

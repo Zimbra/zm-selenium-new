@@ -80,6 +80,6 @@ public class AddToContacts extends SetGroupMailByMessagePreference {
 		String email = app.zGetActiveAccount().soapSelectValue("//mail:cn[@id='" + contactId + "']//mail:a[@n='email']", null);
 
 		ZAssert.assertStringContains(firstname, contactFirst,"Verify the first name was saved correctly");
-		ZAssert.assertStringContains(OriginalEmailAddr.trim(), email, "Verify the email was saved correctly");
+		ZAssert.assertStringContains(email, OriginalEmailAddr.trim(), "Verify the email was saved correctly");
 	}
 }
