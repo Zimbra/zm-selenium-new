@@ -116,7 +116,7 @@ public class InstallSelfSignedCertificate extends AdminCore {
 					"zmcertmgr deploycrt comm /opt/zimbra/ssl/zimbra/commercial/commercial.crt /opt/zimbra/ssl/zimbra/commercial/commercial_ca.crt");
 			CommandLineUtility.runCommandOnZimbraServer(ZimbraAccount.AccountZCS().zGetAccountStoreHost(),
 					"zmmailboxdctl restart");
-			SleepUtil.sleepVeryVeryLong();
+			SleepUtil.sleep(60000);
 		}
 	}
 }
