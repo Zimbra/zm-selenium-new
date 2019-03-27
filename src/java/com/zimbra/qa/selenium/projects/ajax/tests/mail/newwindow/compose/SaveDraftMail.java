@@ -102,7 +102,7 @@ public class SaveDraftMail extends SetGroupMailByMessagePreference {
 
 		// Open the new mail form
 		SeparateWindowFormMailNew window = null;
-		String windowTitle = "Email: Compose";
+		String windowTitle = "E	mail: Compose";
 
 		try {
 

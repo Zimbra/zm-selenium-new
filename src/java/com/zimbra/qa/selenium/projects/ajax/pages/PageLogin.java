@@ -26,8 +26,10 @@ public class PageLogin extends AbsTab {
 	public static class Locators {
 
 		// Buttons
-		public static final String zBtnLogin = "css=input[class^='ZLoginButton']";
-
+		//public static final String zBtnLogin = "css=input[class^='ZLoginButton']";
+		//public static final String zBtnLogin = "css=td[class='submit']";
+		public static final String zBtnLogin = "css=button[value='Sign In']";
+		
 		// Text Input
 		public static final String zInputUsername = "css=input[id='username']";
 		public static final String zInputPassword = "css=input[id='password']";

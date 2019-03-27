@@ -47,6 +47,7 @@ public class PageBriefcase extends AbsTab {
 
 	WebElement we = null;
 
+	
 	public static final String pageTitle = "Email: Briefcase";
 
 	public static class Locators {

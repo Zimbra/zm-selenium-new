@@ -1394,7 +1394,7 @@ public class ExecuteHarnessMain {
 						ConfigProperties.getStringProperty("server.host"), "zmprov -l gas proxy | wc -l")) {
 					totalProxyServers = Integer.parseInt(noOfProxyServers);
 					if (totalProxyServers >= 1) {
-						adminPort = 9071;
+						adminPort = 7071;
 					}
 				}
 				StafIntegration.logInfo = "Server admin port: " + adminPort + ", server port: " + serverPort;
